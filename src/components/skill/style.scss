@@ -1,0 +1,15 @@
+@import '../../assets/style/mixin.scss';
+@import '../../assets/style/varibel.scss';
+.span-skill{
+    font-size: 20px;
+    padding: 10px 20px;
+    background: $logo;
+    margin: 0 20px 20px 0;
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    @include screen(569px){
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+}

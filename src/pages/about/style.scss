@@ -1,0 +1,46 @@
+@import '../../assets/style/mixin.scss';
+@import '../../assets/style/varibel.scss';
+.about-user-boxs{
+    padding:0 15px 50px 15px ;
+    background: $logo2;
+    border-bottom: 5px solid $logo;
+    color: white;
+    .col-1200{
+        @include flex(1200px,space-evenly);
+        .about-me-box{
+            max-width: 450px;
+            min-width: 300px;
+            min-height: 450px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-content: space-between;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            min-height: 350px;
+            line-height: 30px;
+            align-content: space-between;
+            @include screen(991px){
+                max-width: 350px;
+            }
+            @include screen(769px){
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            h1{
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+            .skill-boxs{
+               @include flex(100%,flex-start);
+               margin: 10px 0;
+            }
+
+        }
+    }
+
+}
