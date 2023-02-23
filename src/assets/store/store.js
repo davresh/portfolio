@@ -44,7 +44,7 @@ export const store = {
             siteName:'Todo List',
             language:['html','css','sass','javascript','react','react/redux'],
             text:'Todo List is a multipurpose logistics website and I built this website from scratch using the front-end tools I know.',
-            link:'https://github.com/davresh/Cake-Zone',
+            link:'https://github.com/davresh/todo',
             linkSite:'https://davresh.github.io/todo',
         },
         {
