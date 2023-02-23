@@ -6,7 +6,9 @@ function Template({site}){
     return (
         <div className='template-box'>
             <div className='template-img'>
-                <img src={site.img} alt={site.name} />
+                <a target='_blank' href={site.linkSite}>
+                    <img src={site.img} alt={site.name}/>
+                </a>
             </div>
             <div className='template-text'>
                 <h1>{site.siteName}</h1>

@@ -30,7 +30,7 @@
         border-radius: 5px;
         padding: 10px;
         @include screen(991px){
-            max-width: 70%;
+            max-width: 100%;
         }
         @include screen(769px){
             text-align: center;
