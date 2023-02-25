@@ -1,25 +1,23 @@
 
 import { store } from '../../assets/store/store';
 import userImage from '../../assets/image/user-img.jpg';
-import bg from '../../assets/image/common.svg';
 import { NavLink } from 'react-router-dom';
 import './style.scss';
-import About from '../about';
-import Project from '../project';
 import { Typewriter } from 'react-simple-typewriter'
-import { memo, useContext } from 'react';
-import { myContext } from '../../router';
-import Contact from '../contact';
+import { memo, useEffect } from 'react';
+
 function Home(){
+
     const skills = store.skills;
     const usercv = store.CV
+
     return (
         <>
         <section className='G-container home-hero'>
-            <div className={`home-hero-user`}>
-                <img src={userImage} alt="" />
+            <div className='home-hero-user' data-aos='flip-right'>
+                <img src={userImage} alt="user img" />
             </div>
-            <div className='home-hero-text'>
+            <div className='home-hero-text' data-aos='flip-left'>
                 <h1>HEY, I'M DAVRESH</h1>
                 <div className='text-animation'>
                     <span className='anim-1' >Skills</span>
@@ -44,7 +42,7 @@ function Home(){
             </div>
         </section>
         <section className='G-container about-me-block'>
-            <div className='resume'>
+            <div className='resume' data-aos='flip-right'>
                 <h1>Resume</h1>
                 <p>If you are interested in my candidacy, you can download my resume directly from this site. Without registration and SMS.</p>
                 <a 
@@ -54,11 +52,12 @@ function Home(){
                 >Download CV <span className='icon-file-arrow-down-solid'/></a>
             </div>
             <div className='hobby-purpose'>
-                <div className='d-box'>
+                <div className='d-box' data-aos='fade-right'>
                     <h1>Hobby</h1>
                     <p>A little about my hobbies. During my free time I like listening to music, reading fantasy and historical books, watching movies, playing football, doing fitness.</p>
                 </div>
-                <div className='d-box'>
+                <div className='d-box' data-aos='fade-left'>
+                    <h1>Hobby</h1>
                     <h1>Purpose</h1>
                     <p>Become a “senior developer”, learn as many programming languages as possible, develop and become an expert in programming.</p>
                 </div>

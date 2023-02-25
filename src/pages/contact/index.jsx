@@ -17,7 +17,7 @@ function Contact(){
                     sendEmail(e)
                 }
             }}>
-                <div className="send-btn">
+                <div className="send-btn" data-aos='fade-right'>
                     <label>Name</label>
                     <input type="text" 
                         placeholder='Jone Doe' 
@@ -25,7 +25,7 @@ function Contact(){
                         onChange={setInputValue}
                         required/>
                 </div>
-                <div className="send-btn">
+                <div className="send-btn" data-aos='fade-left'>
                     <label>Email</label>
                     <input 
                         type="email" 
@@ -34,7 +34,7 @@ function Contact(){
                         onChange={setInputValue}
                     required/>
                 </div>
-                <div className="send-btn">
+                <div className="send-btn" data-aos='fade-right'>
                     <label>Message</label>
                     <textarea 
                         name="message" 
@@ -44,7 +44,7 @@ function Contact(){
                         required
                     />
                 </div>
-                <div className='send-btn'>
+                <div className='send-btn'data-aos='fade-left'>
                     <button type='submit' className='to-project' >
                         Send Message
                         <span className='icon-telegram'/>

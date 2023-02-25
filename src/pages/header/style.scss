@@ -4,6 +4,9 @@
 .icon-envelope-solid{
     left: 5px;bottom: 30px;
     z-index: 5;
+    @include screen(769px){
+        opacity: 0.3;
+    }
 }
 .icon-eject-solid{
     bottom: 30px;right: 5px;
@@ -13,6 +16,9 @@
 .to-top-button{
     z-index: 1;
     opacity: 1;
+    @include screen(769px){
+        opacity: 0.2;
+    }
     &:hover{
         color: white;
         background-color: $logo2;

@@ -8,13 +8,19 @@ import Project from '../pages/project';
 import Footer from '../pages/footer';
 import useLoader from '../hooks/useLoader';
 import Loader from '../loader';
-import React, { memo, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
+
+import 'aos/dist/aos.css'
+import Aos from 'aos';
 
 export const myContext = React.createContext('')
 function RouterApp(){
+    useEffect(()=>{
+        Aos.init({duration:1500})
+    },[])
     const [scrolling,setScrolling] = useState(0)
     window.onscroll = ()=> {
-        setScrolling(Math.floor(window.scrollY/10))
+        setScrolling(Math.floor(window.scrollY))
     }
     const {loading} = useLoader()
     if(loading){

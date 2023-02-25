@@ -10,7 +10,7 @@ function Header(){
     return (
         <>
         <a href="#root" >
-            <span className={`icon-style icon-eject-solid ${scrolling >= 30?'to-top-button':''}`}></span>
+            <span className={`icon-style icon-eject-solid ${scrolling >= 300?'to-top-button':''}`}></span>
         </a>
         <a href='mailto:garoyan1910@gmail.com'>
             <span className='icon-style icon-envelope-solid'></span>
