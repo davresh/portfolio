@@ -13,14 +13,17 @@
         border: 2px solid white;
         border-radius: 5px;
         padding: 10px;
+        text-align: center;
         @include screen(991px){
             max-width: 100%;
             margin-bottom: 20px;
         }
+        h3{
+            margin-bottom: 10px;
+        }
         img{
             width: 100%;
             border-radius: 10px;
-            
         }
     }
     .template-text{

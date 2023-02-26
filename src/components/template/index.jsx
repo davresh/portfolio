@@ -6,6 +6,7 @@ function Template({site}){
     return (
         <div className='template-box'>
             <div className='template-img' data-aos='flip-right'>
+                <h3>Click on the image to visit the website</h3>
                 <a target='_blank' href={site.linkSite}>
                     <img src={site.img} alt={site.name}/>
                 </a>

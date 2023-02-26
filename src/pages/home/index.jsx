@@ -17,7 +17,7 @@ function Home(){
             <div className='home-hero-user' data-aos='flip-right'>
                 <img src={userImage} alt="user img" />
             </div>
-            <div className='home-hero-text' data-aos='flip-left'>
+            <div className='home-hero-text' data-aos='fade-left'>
                 <h1>HEY, I'M DAVRESH</h1>
                 <div className='text-animation'>
                     <span className='anim-1' >Skills</span>
@@ -57,8 +57,7 @@ function Home(){
                     <p>A little about my hobbies. During my free time I like listening to music, reading fantasy and historical books, watching movies, playing football, doing fitness.</p>
                 </div>
                 <div className='d-box' data-aos='fade-left'>
-                    <h1>Hobby</h1>
-                    <h1>Purpose</h1>
+                    <h1>Hobby Purpose</h1>
                     <p>Become a “senior developer”, learn as many programming languages as possible, develop and become an expert in programming.</p>
                 </div>
             </div>
