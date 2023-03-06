@@ -10,6 +10,7 @@ function Template({site}){
                 <a target='_blank' href={site.linkSite}>
                     <img src={site.img} alt={site.name}/>
                 </a>
+                
             </div>
             <div className='template-text' data-aos='flip-left'>
                 <h1>{site.siteName}</h1>

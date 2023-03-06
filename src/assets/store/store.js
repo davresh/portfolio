@@ -4,13 +4,23 @@ import webSite3 from '../image/web-site3.jpg';
 import webSite4 from '../image/web-site4.jpg';
 import webSite5 from '../image/web-site5.jpg';
 import webSite6 from '../image/web-site6.jpg';
+import webSite7 from '../image/web-site7.jpg';
 import bg from '../image/common.svg';
 import CV from '../image/userCV.pdf';
 export const store = {
     CV,
     bg,
-    skills:['HTML5','CSS3','BOOTSTRAP','SASS','JAVASCRIPT','REACT','REDUX/TOOLKIT'],
+    skills:['HTML5','CSS3','BOOTSTRAP','SASS','JAVASCRIPT','REACT','REDUX/TOOLKIT','GIT','OOP'],
     sites:[
+        {
+            id:7,
+            img:webSite7,
+            siteName:'Metal Site',
+            language:['html','css','sass','javascript','React','Vite'],
+            text:'Metal is a multipurpose logistics website and I built this website from scratch using the front-end tools I know.',
+            link:'https://github.com/davresh/metal',
+            linkSite:'https://davresh.github.io/metal/',
+        },
         {
             id:1,
             img:webSite1,
