@@ -1,0 +1,48 @@
+@import '../../assets/style/mixin.scss';
+@import '../../assets/style/varibel.scss';
+.contact-page{
+    background: $logo2;
+    border-bottom: 3px solid $logo;
+    padding: 50px 15px;
+    .contact-inputs{
+        @include flex(900px,center);
+        min-width: 290px;
+        min-height: 750px;
+        align-content: space-between;
+        padding: 50px 20px;
+        background: #fff;
+        border-radius: 15px;
+        .send-btn{
+            width: 700px;
+            text-align: left;
+            margin-bottom:10px;
+            label{
+                letter-spacing: 1px;
+            }
+            input,textarea{
+                border: none;
+                width: 100%;
+                height: fit-content;
+                font-size: 22px;
+                padding: 20px 15px;
+                outline: 0;
+                border-radius: 10px;
+                margin-top: 5px;
+                background: #f0f0f0;
+            }
+
+                
+            button{
+                font-size: 25px;
+                cursor: pointer;
+            }
+            .inp-false{
+                background-color: rgba(255, 71, 71, 0.7);
+            }
+            .inp-true{
+                background-color: $logo2;
+            }
+        }
+
+    }
+}

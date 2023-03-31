@@ -1,0 +1,83 @@
+@import '../../assets/style/mixin.scss';
+@import '../../assets/style/varibel.scss';
+footer{
+    min-height: 300px;
+    background: $logo;
+    .socal-con{
+        @include flex(1200px,space-between);
+        padding: 50px 0;
+        .footer-user-box{
+            width: 100%;
+            .page-links{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                li{
+                    list-style-type: none;
+                    text-transform: uppercase;
+                    @include screen(520px){
+                       width: 100%;
+                        text-align: center;
+                    }
+                    a{
+                        display: block;
+                        text-decoration: underline;
+                        color: white;
+                        font-size: 20px;
+                        letter-spacing: 3px;
+
+                        margin: 10px 15px;
+                        padding-bottom: 5px;
+                        transition: 0.5s ;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .footer-soc-box{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .user-number{
+                font-size: 30px;
+                color:white;
+                margin: 10px 0;
+                transition: all .2s;
+                &:hover{
+                    color: $logo2;
+                }
+            }
+            .footer-icon{
+               a{
+                    font-size: 30px;
+                    span{
+                        margin: 0 5px;
+                        color: white;
+                        transition: all linear .4s;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+               }
+            }
+        }
+    }
+    .copyright{
+        width: 1200px;
+        border-top: 3px solid #ccc;
+        text-align: center;
+        padding: 20px 0;
+        color: white;
+        a{
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}

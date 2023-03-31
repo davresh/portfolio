@@ -1,0 +1,166 @@
+@import '../../assets/style/mixin.scss';
+@import '../../assets/style/varibel.scss';
+
+.icon-envelope-solid{
+    left: 5px;bottom: 30px;
+    z-index: 5;
+    @include screen(769px){
+        opacity: 0.3;
+    }
+}
+
+.header{
+    overflow: hidden;
+    padding: 0 15px;
+    position: sticky;top: 0;
+    z-index: 10;
+    background: $logo;
+    box-shadow: 0 0 35px 2px #ccc;
+    color: white;
+    .header-min-box{
+        @include flex(1200px,space-between);
+        height: 80px;
+        align-items: center;
+        .about-user{
+            @include flex(300px,space-between);
+            align-items: center;
+            cursor: pointer;
+            @include screen(991px){
+                width: 280px;
+            }
+            @include screen(400px){
+                width: auto;
+            }
+            img{
+                width: 60px;
+                border-radius: 20px;
+                transition: transform .5s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            h2{
+                color: white;
+                transition: all .5s;
+                font-weight: 500;
+                @include screen(400px){
+                    display: none;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .bar-box{
+            .icon-bars-solid{
+                font-size: 40px;
+                cursor: pointer;
+                transition: .4s linear;
+                &:hover{
+                    color: $logo2;
+                }
+            }
+            display: none;
+            @include screen(769px){
+                display: inline-block;
+            }
+        }
+        .pages-head-box{
+            transition: .5s ;
+            @include screen(769px){
+                width: 100%;height: 100vh;
+                display: flex;
+                justify-content: flex-end;
+                position: fixed;
+                top: 0;left: 0;
+                z-index: 10;
+                transform: translateX(100%);
+            }
+            @include screen(320px){
+                justify-content: center;
+            }
+            
+        }
+        .page-links{
+            @include flex(500px,right);
+            @include screen(991px){
+                width: 400px;
+            }
+            @include screen(769px){
+                width: 320px;height: 100vh;
+                align-content: start;
+                background: rgba(0,0,0,0.4);
+                backdrop-filter: blur(5px);
+            }
+
+            li{
+                list-style: none;
+                position: relative;
+                @include screen(769px){
+                    min-width: 320px;
+                }
+                .icon-cross{
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    text-align: center;
+                    font-size: 40px;
+                    cursor: pointer;
+                    transition: 0.4s linear;
+                    position: relative;
+                    left: calc(100% - 80px);
+                    border-radius: 10px;
+                    color:  white;
+                    &:hover{
+                        background: #000;
+                    }
+                    display: none;
+                    @include screen(769px){
+                        display: inline-block;
+                    }
+                }
+                a{
+                    display: block;
+                    height: 80px;
+                    line-height: 80px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                    padding: 0 10px;
+                    transition: all .4s;
+                    &:hover{
+                        background: white;
+                        color: $logo2;
+                    }
+                    @include screen(769px){
+                        width:  100%;
+                        height: 60px;
+                        line-height: 60px;
+                        color: #999999;
+                        font-size: 30px;
+                        &:hover{
+                            color: white;
+                            background: #000;
+                        }
+                    }
+                }
+                .active{
+                    background: white;
+                    color: $logo2;
+                    @include screen(769px){
+                        background: black;
+                        color: white;
+                    }
+                }
+
+            }
+        }
+        .page-link-block{
+            transform: translateX(0);
+        }
+    }
+    
+}

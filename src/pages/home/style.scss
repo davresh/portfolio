@@ -1,0 +1,129 @@
+@import '../../assets/style/mixin.scss';
+@import '../../assets/style/varibel.scss';
+.home-hero{
+    justify-content: space-evenly;
+    min-height: 100vh;
+    background: $logo2;
+    align-items: center;
+    text-align: left;
+    border-bottom: 3px solid $logo;
+    color: white;
+    padding: 50px 15px;
+    .home-hero-user{
+        @include flex(500px,center);
+        align-content: center;
+        max-width: 500px;
+        min-width: 300px;
+        border: 5px solid white;
+        padding: 15px;
+        border-radius: 100px;
+        @include screen(991px){
+            max-width: 350px;
+        }
+        @include screen(769px){
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+        img{
+            width: 100%;
+            border-radius:85px;
+        }
+    }
+    .home-hero-text{
+        max-width: 550px;
+        min-width: 300px;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 10px;
+        overflow: hidden;
+        @include screen(1200px){
+            max-width: 400px;
+        }
+        @include screen(991px){
+            max-width: 300px;
+        }
+        @include screen(769px){
+            max-width: 100%;
+            text-align: center;
+        }
+        h1{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .text-animation{
+            width: 100%;
+            overflow: hidden;
+            margin-top: 20px;
+            span{
+                font-size: 20px;
+                letter-spacing: 1px;
+                
+            }
+            .anim-1{
+                margin-right: 5px;
+            }
+        
+            .anim-2{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                color: $logo;
+                font-size: 25px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+        p{
+            letter-spacing: 1px;
+            font-size: 20px;
+            margin: 20px 0 40px 0;
+            font-weight: 300;
+        }
+    }
+}
+.about-me-block{
+    background-color: $logo2;
+    color: white;
+    padding: 50px 15px;
+    border-bottom: 3px solid $logo;
+    .resume{
+        width: 800px;
+        text-align: center;
+        line-height: 20px;
+        margin-bottom: 50px;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 10px 10px 30px 10px;
+    }
+    .hobby-purpose{
+        width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include screen(991px){
+            justify-content: space-evenly;
+        }
+        .d-box{
+            max-width: 450px;
+            min-width: 300px;
+            text-align: center;
+            line-height: 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            @include screen(991px){
+                max-width: 350px;
+            }
+            @include screen(769px){
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    h1{
+        font-size: 30px;
+    }
+   p{
+        font-size: 20px;
+        margin: 20px 0 30px 0;
+        letter-spacing: 3px;
+   }
+}
